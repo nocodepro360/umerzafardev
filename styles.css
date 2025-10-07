@@ -2815,3 +2815,16 @@ textarea::placeholder {
         margin-bottom: 20px; 
     }
 }
+.image-custom {
+  height: 50px;        /* Navbar height ke mutabiq */
+  width: auto;         /* Aspect ratio maintain kare */
+  vertical-align: middle;
+  margin-right: 15px;  /* Text se thoda gap */
+}
+
+@media (max-width: 768px) {
+  .image-custom {
+    height: 40px;      /* Mobile view me thoda chhoti image */
+    margin-right: 10px;
+  }
+}
