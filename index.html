@@ -1,1 +1,610 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukaram's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./img/img5.png">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Port<span class="highlight">folio</span></span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text animate-from-left">
+                <div class="hire-badge">
+                    <i class="fas fa-circle"></i> Available for Hire
+                </div>
+                <h1 class="main-heading">
+                    Hi, I'm <span class="highlight">Umer Zafar</span>
+                    <span class="heading-shadow">Umer Zafar</span>
+                </h1>
+                <h2 class="sub-heading">
+                    Freelance WordPress Developer
+                    <span class="heading-reflection">Freelance WordPress Developer</span>
+                </h2>
+                <p class="hero-description">
+                    Looking for a WordPress expert who can deliver results?
+                </p>
+                <p class="hero-description">
+                    With over 10 years of experience, I specialize in creating responsive WordPress websites, custom
+                    themes, and complex WooCommerce solutions. Whether you need custom development, plugin building, or
+                    troubleshooting, I’ve got you covered. I pride myself on delivering user-friendly, SEO-optimized
+                    sites that enhance your online presence and drive engagement. </p>
+                <div class="hero-buttons">
+                    <a href="./img/cv.pdf" class="download-btn" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+
+                    <a href="#contact" class="secondary-btn scroll-to-contact">
+                        Let's Talk <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-icons-container">
+                    <a href="https://wa.me/03221220721" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/wordpress-developer-memberpress-websites-developer-e-learning-websites/"
+                        class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://profile.indeed.com/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                    <a href="https://www.instagram.com/syed_mukaram_gillani_9090/" class="social-icon" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.fiverr.com/mukaram_gillani?public_mode=true" class="social-icon"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="custom-fiverr">fi</i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-from-right">
+                <div class="image-background">
+                    <div class="bg-shape-1"></div>
+                    <div class="bg-shape-2"></div>
+                    <div class="dots-bg"></div>
+                </div>
+                <div class="image-frame"></div>
+                <img src="./img/UMER_ME.png" alt="Profile Picture">
+
+
+                <!-- Updated Floating Icons -->
+                <div class="floating-icon icon1">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="floating-icon icon2">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="floating-icon icon3">
+                    <i class="fas fa-palette"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content animate-from-bottom">
+                <div class="about-image animate-from-left">
+                    <div class="image-background">
+                        <div class="bg-shape-1"></div>
+                        <div class="bg-shape-2"></div>
+                        <div class="dots-bg"></div>
+                    </div>
+                    <div class="image-frame"></div>
+                    <img src="./img/UMER_ME.png" alt="About Me">
+
+                    <!-- Tech Icons -->
+                    <div class="about-icon icon1">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="about-icon icon2">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="about-icon icon3">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="about-icon icon4">
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
+                <div class="about-text animate-from-right">
+                    <h3 class="about-subtitle">Your Trusted Freelance WordPress Developer.</h3>
+                    <p class="about-description">
+                        With over 10 years of professional experience, I am Umer Zafar, a seasoned software engineer who
+                        graduated with a BS in Software Engineering from Punjab University, Lahore in October 2013. My
+                        career began at a multinational software company, where I worked as a full-stack developer
+                        across various technologies, honing my technical skills and industry insights.
+
+                        In 2014, I ventured into WordPress development, expanding my expertise by working on freelance
+                        platforms such as Fiverr and Upwork. Over time, I transitioned to handling agency clients,
+                        allowing me to deepen my understanding of WordPress development, from theme customization to
+                        building bespoke themes, plugins, and multi-site solutions.
+                    </p>
+                    <p class="about-description">
+                        I have in-depth expertise in PHP, .NET, jQuery, CSS3, JavaScript, and related technologies,
+                        which further enhance my ability to deliver robust and scalable solutions.
+
+                        By 2017, I began to broaden my skill set, diving into digital marketing, content marketing, SEO,
+                        and eCommerce. This diverse knowledge empowers me to deliver comprehensive WordPress development
+                        services with a marketing and SEO perspective, ensuring that my clients receive not just
+                        functional websites but also strategically positioned digital platforms.
+
+                        Currently, I am a full-time freelance WordPress developer, catering to the needs of small
+                        agencies and large organizations alike. My work goes beyond client projects; I am also dedicated
+                        to my personal ventures, creating SaaS applications, tools-based projects, and niche blogs, all
+                        driven by my own content marketing strategies.
+
+                        When I am not immersed in development or marketing, you can find me exploring the great
+                        outdoors, indulging in my love for traveling, mountaineering, and trekking.
+
+                        Let’s collaborate and bring your WordPress vision to life with a seamless blend of development
+                        expertise and strategic marketing insight.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Umer Zafar</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">umerzafar123@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">lahore,pakistan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Availability:</span>
+                            <span class="detail-value">Available for remote work also for Freelance</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="13">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-text">Experience Years</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="300">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-text">Successful Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-text">Web Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Industries I Proudly Support with Expert WordPress Services
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Health & Wellness</h3>
+                    <p>Websites for clinics, doctors, fitness centers, and wellness consultants with appointment bookings.</p>
+                </div>
+                <div class="skill-card animate-from-right">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education & e-Learning</h3>
+                    <p>Learning management systems, online course platforms, and school/university websites.</p>
+                </div>
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-building"></i>
+                    <h3>Real Estate</h3>
+                    <p>Property listings, agent pages, and map integrations for real estate agencies.</p>
+                </div>
+                <div class="skill-card animate-from-right">
+                     <i class="fas fa-plane-departure"></i>
+                    <h3>Hospitality & Travel</h3>
+                    <p>Websites for hotels, travel agencies, and tour operators featuring booking systems and itinerary details.</p>
+                </div>
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Nonprofit & Charity</h3>
+                    <p>Donation pages, volunteer sign-ups, and awareness campaign websites for nonprofits.</p>
+                </div>
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>Creative Portfolios</h3>
+                    <p>Showcasing work for artists, designers, photographers, and content creators with customizable galleries.</p>
+                </div>
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food & Beverage</h3>
+                    <p>Websites for restaurants, cafes, and food bloggers, including menu displays and reservation systems.</p>
+                </div>
+                <div class="skill-card animate-from-left">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Events & Entertainment</h3>
+                    <p>Platforms for event management companies, venues, and entertainment services with event booking and schedule management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="asad">What Services Do I Provide?</h2>
+            <div class="projects-grid">
+                <!-- Portfolio Websites -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>WordPress Setup & Configurations</h3>
+                        <p>Get started hassle-free with a professional WordPress setup and installation, ensuring everything’s ready for you to create your ideal website.</p>
+                       
+                    </div>
+                </div>
+
+                <!-- Academic Websites -->
+                <div class="project-card animate-from-right">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Custom Theme & Plugin Development</h3>
+                        <p>Get a personalized WordPress experience with custom-built themes and plugins that perfectly match your brand’s style and functionality.</p>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce & LMS Solutions</h3>
+                        <p>Build a sleek, secure online store or elearning website that’s easy to manage and designed to boost conversions.</p>
+                    </div>
+                </div>
+
+                <!-- Wordpress side -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Website Optimization & Performance</h3>
+                        <p>Make your WordPress site faster and more efficient with optimization services that ensure quick load times and a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <!-- E-commerce side -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>WordPress Design & User Experience</h3>
+                        <p>Transform your WordPress site into an engaging experience with clean, modern designs and intuitive navigation.</p>
+                    </div>
+                </div>
+
+                <!-- Blogs side -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bug Fixing & Troubleshooting</h3>
+                        <p>Say goodbye to website glitches! I’ll quickly troubleshoot and resolve any issues to keep your site running smoothly.</p>
+                    </div>
+                </div>
+                <!-- Buddyboss websites  -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <img style="height: 80px;" src="./img/img3.svg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>BuddyBoss Websites </h3>
+                        <p>Custom BuddyBoss website solutions designed to boost engagement, enhance community
+                            experiences, and deliver a seamless user journey.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Communities</span>
+                            <span><i class="fas fa-check"></i> Groups</span>
+                            <span><i class="fas fa-check"></i> Forums </span>
+                            <span><i class="fas fa-check"></i> New Feeds</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>BuddyBoss platform</span>
+                            <span>BuddyBoss Platform pro</span>
+                            <span>BuddyBoss themes</span>
+                            <!-- <span>BuddyBoss media Plugin</span> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Memberpress websites  -->
+                <div class="project-card animate-from-left">
+                    <div class="project-icon">
+                        <img style="height: 80px;" src="./img/img4.svg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>MemberPress websites</h3>
+                        <p>Custom MemberPress website solutions tailored to manage memberships, protect content, and
+                            grow your online community effortlessly.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Clean design</span>
+                            <span><i class="fas fa-check"></i> Performance Optimized</span>
+                            <span><i class="fas fa-check"></i> Add Paid Members </span>
+                            <span><i class="fas fa-check"></i> Add Member ships </span>
+                        </div>
+                        <div class="project-tech">
+                            <span>MemberShip plugin</span>
+                            <span>Themes</span>
+                            <span>Other Plugins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section animate-from-right">
+                <div class="cta-content">
+                    <h3 class="cta-title">Looking for a custom website?</h3>
+                    <p class="cta-text">Let's work together and create something amazing!</p>
+                    <a href="#contact" class="cta-button">
+                        <span class="button-text">Start Project</span>
+                        <span class="button-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's Talk</h2>
+            <div class="hiring-status animate-from-left">
+                <div class="status-icon">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <h3>Available for Hire</h3>
+                <p>Open to Full-time Opportunities & Freelance Projects</p>
+            </div>
+            <div class="contact-wrapper">
+                <!-- Contact Info Box -->
+                <div class="contact-info animate-from-left">
+                    <div class="info-box clickable" onclick="window.location.href='tel:+923221220721'">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Call Me</h3>
+                        <p>+923221220721</p>
+                        <span class="click-hint">Click to call</span>
+                    </div>
+
+                    <div class="info-box clickable"
+                        onclick="window.open('mailto:mukaramgillani876@gmail.com', '_blank')" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Me</h3>
+                        <p>mukaramgillani876@gmail.com</p>
+                        <span class="click-hint">Click to send email</span>
+                    </div>
+
+                    <div class="info-box clickable"
+                        onclick="window.open('https://maps.app.goo.gl/1SZFrZZjRuEdqBaA6', '_blank')" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>lahore,pakistan</p>
+                        <span class="click-hint">Click to view map</span>
+                    </div>
+                    <div class="availability-box">
+                        <h3>Availability Status</h3>
+                        <span class="status-badge">Available for Hire</span>
+                        <p>Open to:</p>
+                        <ul class="availability-list">
+                            <li><i class="fas fa-check"></i> Full-time Position</li>
+                            <li><i class="fas fa-check"></i> Freelance Projects</li>
+                            <li><i class="fas fa-check"></i> Remote Work</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <div class="accent-dot dot-1"></div>
+                        <div class="accent-dot dot-2"></div>
+                        <div class="accent-dot dot-3"></div>
+
+                        <h2 class="form-title">How can I help you?</h2>
+                        <p class="form-subtitle">Feel free to reach out for collaborations, projects, or just to say
+                            hello! I'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="57f0d720-1255-4cc9-ae35-571d029d3948">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder=" " required>
+                            <label>Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder=" " required>
+                            <label>Company Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="" required>
+                            <label>Your Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="" pattern="[0-9]{11}"
+                                title="Please enter a valid phone number (11 digits)" required>
+                            <label>Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="purpose" required>
+                                <option value="" disabled selected></option>
+                                <option value="project">Project Discussion</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="hiring">Hiring Inquiry</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label>Purpose</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder=" " required></textarea>
+                            <label>Your Message</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Left Section -->
+                <div class="footer-left animate-from-left">
+                    <h3 class="footer-logo">Port<span class="highlight">folio</span></h3>
+                    <p class="footer-desc">Let's work together to create something great!</p>
+                </div>
+
+                <!-- Footer Links with staggered animations -->
+                <div class="footer-links">
+                    <div class="footer-section animate-from-bottom" style="animation-delay: 0.1s">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section animate-from-bottom" style="animation-delay: 0.2s">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>
+                                <a href="tel:+923221220721">
+                                    <i class="fas fa-phone"></i> +92 322 1220721
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mukaramgillani876gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-envelope"></i> mukaramgillani876@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/fpMwXjyhuEKgZgVu6" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fas fa-map-marker-alt"></i>lahore, Pakistan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section animate-from-bottom" style="animation-delay: 0.3s">
+                        <h4>Social Links</h4>
+                        <div class="social-icons-container">
+                            <a href="https://wa.me/03221220721" class="social-icon" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/wordpress-developer-memberpress-websites-developer-e-learning-websites/"
+                                class="social-icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://profile.indeed.com/" class="social-icon" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-briefcase"></i>
+                            </a>
+                            <a href="https://www.instagram.com/syed_mukaram_gillani_9090/" class="social-icon"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.fiverr.com/mukaram_gillani?public_mode=true" class="social-icon"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="custom-fiverr">fi</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom animate-fade-in">
+                <p class="footer-text">
+                    <span class="split-text">Portfolio</span>
+                    <span class="copyright-text">. All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
