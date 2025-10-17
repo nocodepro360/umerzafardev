@@ -56,71 +56,72 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', handleAnimations);
 
     // Optional: Add loading state
-    document.querySelector('.download-btn').addEventListener('click', function(e) {
+    document.querySelector('.download-btn')?.addEventListener('click', function(e) {
         this.classList.add('loading');
         setTimeout(() => {
             this.classList.remove('loading');
         }, 3000); // Remove loading state after 3 seconds
     });
 
-    // Stats counter animation
-    function animateStats() {
-        const stats = document.querySelectorAll('.stat-number');
-        
-        stats.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-target'));
-            let count = 0;
-            const duration = 2000; // 2 seconds
-            const increment = target / (duration / 16); // 60fps
+    /* ==========================
+       ✅ Fixed Counter Animation
+       ========================== */
+    function animateStatsOnce(containerSelector = '.about-stats', duration = 2000) {
+        const container = document.querySelector(containerSelector);
+        if (!container) return;
 
-            const updateCount = () => {
-                if (count < target) {
-                    count += increment;
-                    stat.textContent = Math.floor(count);
-                    requestAnimationFrame(updateCount);
+        const stats = container.querySelectorAll('.stat-number');
+        if (!stats.length) return;
+
+        const animateSingle = (stat) => {
+            const rawTarget = stat.getAttribute('data-target') ?? '0';
+            const target = parseFloat(rawTarget);
+            if (isNaN(target)) return;
+
+            const decimals = (String(rawTarget).includes('.')) ? String(rawTarget).split('.')[1].length : 0;
+            const start = performance.now();
+
+            const step = (now) => {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 1 - Math.pow(1 - progress, 3);
+                const current = target * ease;
+
+                stat.textContent = (decimals > 0)
+                    ? current.toFixed(decimals)
+                    : Math.floor(current);
+
+                if (progress < 1) {
+                    requestAnimationFrame(step);
                 } else {
-                    stat.textContent = target;
+                    stat.textContent = (decimals > 0)
+                        ? target.toFixed(decimals)
+                        : String(Math.floor(target));
                 }
             };
 
-            updateCount();
-        });
-    }
-
-    // Run animation when the about section is in view
-    const aboutSection = document.querySelector('#about');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateStats();
-                observer.unobserve(entry.target);
-            }
-        });
-    });
-
-    observer.observe(aboutSection);
-
-    // Animation setup
-    function setupAnimations() {
-        const observerOptions = {
-            threshold: 0.2
+            requestAnimationFrame(step);
         };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-active');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all elements with animation classes
-        const elements = document.querySelectorAll('.animate-from-left, .animate-from-right, .animate-from-bottom');
-        elements.forEach(element => {
-            observer.observe(element);
-        });
+        stats.forEach(stat => animateSingle(stat));
     }
 
-    // Call setup function when DOM is loaded
-    setupAnimations();
+    // Trigger counter when stats section is visible
+    const statsSection = document.querySelector('.about-stats');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStatsOnce('.about-stats', 2000);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(statsSection);
+    } else {
+        // Fallback if section not found
+        animateStatsOnce('.about-stats', 2000);
+    }
+
 });
