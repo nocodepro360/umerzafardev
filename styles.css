@@ -808,12 +808,17 @@ body {
 
 .form-group {
     margin-bottom: 1.5rem;
+    position: relative; /* Added for label positioning */
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
+    position: absolute; /* label can move freely now */
+    top: -3px !important; /* moved slightly higher */
+    left: 10px;
     color: #e0e0e0;
+    font-size: 0.95rem;
+    background: transparent;
+    transition: all 0.3s ease;
 }
 
 .form-group input,
@@ -872,6 +877,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
 }
+
 
 /* Responsive Design */
 @media (max-width: 968px) {
@@ -1195,6 +1201,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 1.2rem;
     font-size: 1.1rem;
+
 }
 
 .footer-section ul {
@@ -2828,4 +2835,8 @@ textarea::placeholder {
     height: 40px;      /* Mobile view me thoda chhoti image */
     margin-right: 10px;
   }
+}
+
+.h4-random{
+    margin-left: 40px;
 }
