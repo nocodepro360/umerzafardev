@@ -1261,6 +1261,7 @@ body {
     }
 
     .social-links {
+      
         justify-content: center;
     }
 
@@ -1528,12 +1529,13 @@ body {
 
 /* Social Icons Shared Styles */
 .social-icons-container {
-    display: flex;
+    display: none;
     gap: 1.2rem;
     margin-top: 2rem;
 }
 
 .social-icon {
+
     position: relative;
     width: 45px;
     height: 45px;
@@ -1595,6 +1597,7 @@ footer .social-icons-container {
     justify-content: center;
     margin-top: 1rem;
 }
+
 
 footer .social-icon {
     width: 40px;
@@ -2820,13 +2823,6 @@ textarea::placeholder {
     height: 40px;      /* Mobile view me thoda chhoti image */
   }
 }
-
-
-
-
-
-
-
-
-
-
+.h4-random{
+    margin-left:40px;
+}
