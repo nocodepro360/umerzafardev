@@ -91,32 +91,15 @@ body {
     transition: 0.3s;
 }
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 0 1rem !important;
-    }
-
     .nav-toggle {
         display: flex !important;
         position: absolute !important;
-        right: 1rem !important;
-        top: 1.2rem !important;
-    }
-
-    .nav-links {
-        flex-direction: column !important;
-        background: rgba(0, 0, 0, 0.9) !important;
-        position: absolute !important;
-        top: 100% !important;
-        right: 0 !important;
-        width: 100% !important;
-        text-align: center !important;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex !important;
+        right: 0.5rem !important;
+        top: 1rem !important;
+        transform: scale(0.8) !important; /* size chhota */
     }
 }
+
 
 
 /* Hero Section */
@@ -2868,4 +2851,5 @@ textarea::placeholder {
 .h4-random{
     margin-left: 40px;
 }
+
 
