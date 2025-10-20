@@ -94,11 +94,12 @@ body {
     .nav-toggle {
         display: flex !important;
         position: absolute !important;
-        right: 0.5rem !important;
+        left: -30px !important;
         top: 1rem !important;
-        transform: scale(0.8) !important; /* size chhota */
+        transform: scale(0.8) !important;
     }
 }
+
 
 
 
@@ -2851,5 +2852,6 @@ textarea::placeholder {
 .h4-random{
     margin-left: 40px;
 }
+
 
 
