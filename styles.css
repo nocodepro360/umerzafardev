@@ -27,64 +27,50 @@ body {
 }
 
 /* Navbar Styles */
-.navbar {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
+.navbar { background: rgba(0, 0, 0, 0.8);
+         backdrop-filter: blur(10px); 
+         padding: 1rem 0; position: fixed;
+         width: 100%; top: 0; z-index:
+         1000; border-bottom: 1px solid rgba(0, 255, 255, 0.1); 
+        } 
+.nav-container { max-width: 1200px; 
+                margin: 0 auto; display: flex; 
+                justify-content: space-between; 
+                align-items: center; padding: 0 2rem;
+               }
 .logo-text {
     font-size: 2rem;
     font-weight: bold;
     background: var(--gradient);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links a {
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.3); 
+} 
+.nav-links { 
+    display: flex; 
+    gap: 2rem; 
+    list-style: none; 
+} 
+.nav-links a { 
     color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    text-decoration: none; 
+    font-weight: 500; 
+    padding: 0.5rem 1rem; 
+    border-radius: 20px; 
     transition: all 0.3s ease;
 }
-
 .nav-links a:hover, .nav-links a.active {
-    background: rgba(0, 255, 255, 0.1);
-    color: var(--primary-color);
+    background: rgba(0, 255, 255, 0.1); 
+    color: var(--primary-color); 
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
-
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
+.nav-toggle { 
+    display: none; 
+    flex-direction: column; 
+    gap: 5px; 
     cursor: pointer;
 }
-
-.nav-toggle span {
+.nav-toggle span { 
     width: 25px;
     height: 3px;
     background-color: var(--primary-color);
@@ -2839,6 +2825,7 @@ textarea::placeholder {
 .h4-random{
     margin-left: 40px;
 }
+
 
 
 
