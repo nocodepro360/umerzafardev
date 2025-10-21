@@ -23,21 +23,36 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 20px; /* Default padding for mobile */
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 60px; /* Wider padding for laptop/desktop */
+    }
 }
 
 /* Navbar Styles */
-.navbar { background: rgba(0, 0, 0, 0.8);
+.navbar { background: rgb(0, 0, 0);
          backdrop-filter: blur(10px); 
          padding: 1rem 0; position: fixed;
          width: 100%; top: 0; z-index:
          1000; border-bottom: 1px solid rgba(0, 255, 255, 0.1); 
         } 
-.nav-container { max-width: 1200px; 
-                margin: 0 auto; display: flex; 
-                justify-content: space-between; 
-                align-items: center; padding: 0 2rem;
-               }
+.nav-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; /* Default padding for mobile */
+}
+
+@media (min-width: 1024px) {
+    .nav-container {
+        padding: 0 60px; /* Wider padding for laptop/desktop */
+    }
+}
 .logo-text {
     font-size: 2rem;
     font-weight: bold;
@@ -86,13 +101,18 @@ body {
 }
 
 .hero-container {
-    
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px ;
+    padding: 20px; /* Default padding for mobile */
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        padding: 60px; /* Wider padding for laptop/desktop */
+    }
 }
 
 .hero-text {
@@ -2823,6 +2843,8 @@ textarea::placeholder {
     height: 40px;      /* Mobile view me thoda chhoti image */
   }
 }
-.h4-random{
-    margin-left:40px;
+@media (max-width: 768px) {
+    .h4-random {
+        margin-left: 0;
+    }
 }
