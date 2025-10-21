@@ -24,11 +24,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px; /* Default padding for mobile */
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
     .container {
         padding: 0 60px; /* Wider padding for laptop/desktop */
+        width: 90%; /* Make container 90% of viewport on desktop/laptop */
+        max-width: 1200px;
+    }
+}
+
+/* Make hero use the full viewport width on desktop so it doesn't feel too narrow
+   while other sections keep the 90% container width. */
+@media (min-width: 1024px) {
+    .hero > .container {
+        width: 100%;
+        max-width: none;
+        padding-left: 60px; /* keep the same horizontal padding */
+        padding-right: 60px;
+    }
+
+    /* Slightly increase hero image on larger screens for better balance */
+    .hero-image img {
+        width: 420px;
     }
 }
 
@@ -39,13 +58,12 @@ body {
          width: 100%; top: 0; z-index:
          1000; border-bottom: 1px solid rgba(0, 255, 255, 0.1); 
         } 
-.nav-container { 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 20px; /* Default padding for mobile */
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -95,18 +113,18 @@ body {
 .hero {
     min-height: 100vh;
     padding-top: 80px;
+    padding-left:10px;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px; /* Default padding for mobile */
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -115,9 +133,26 @@ body {
     }
 }
 
+@media (max-width: 767px) {
+    .hero-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+}
+
 .hero-text {
-    flex: 1;
-    padding-right: 3rem;
+    flex: 1 1 60%;
+    padding-right: 2rem;
+    min-width: 0;
 }
 
 .main-heading {
@@ -249,10 +284,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex: 0 0 40%;
 }
 
 .hero-image img {
-    width: 350px;
+    width: 95%;
+    max-width: 420px;
     height: auto;
     border-radius: 30px;
     position: relative;
