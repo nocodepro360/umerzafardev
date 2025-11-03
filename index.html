@@ -18,6 +18,17 @@
             padding: 0;
             overflow-x: hidden;
         }
+        .social-icons-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .social-icons-container {
+    justify-content: center;
+  }
+}
     </style>
 </head>
 
@@ -45,78 +56,74 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-container">
-            <div class="hero-text animate-from-left">
-                <div class="hire-badge">
-                    <i class="fas fa-circle"></i> Available for Hire
-                </div>
-                <h1 class="main-heading">
-                    Hi, I'm <span class="highlight">Umer Zafar</span>
-                    <span class="heading-shadow">Umer Zafar</span>
-                </h1>
-                <h2 class="sub-heading">
-                    Freelance WordPress Developer
-                    <span class="heading-reflection">Freelance WordPress Developer</span>
-                </h2>
-                <p class="hero-description">
-                    Looking for a WordPress expert who can deliver results?
-                </p>
-                <p class="hero-description">
-                    With over 13 years of experience, I specialize in creating responsive WordPress websites, custom
-                    themes, and complex WooCommerce solutions. Whether you need custom development, plugin building, or
-                    troubleshooting, I’ve got you covered. I pride myself on delivering user-friendly, SEO-optimized
-                    sites that enhance your online presence and drive engagement. </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="secondary-btn scroll-to-contact">
-                        View My Services <i class="fas fa-paper-plane"></i>
-                    </a>
-
-                    <a href="#contact" class="secondary-btn scroll-to-contact">
-                        Let's Talk <i class="fas fa-paper-plane"></i>
-                    </a>
-                </div>
-                <div class="social-icons-container">
-                    <a href="https://wa.me/03323289918" class="social-icon" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
-                        class="social-icon" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin-in"></i>
-
-
-                        <a href="#" class="social-icon display-none" target="_blank" rel="noopener noreferrer"
-                            style="display:none;">
-                            <i class="custom-fiverr">fi</i>
-                        </a>
-
-                </div>
-            </div>
-            <div class="hero-image animate-from-left">
-                <div class="image-background">
-                    <div class="bg-shape-1"></div>
-                    <div class="bg-shape-2"></div>
-                    <div class="dots-bg"></div>
-                </div>
-                <div class="image-frame"></div>
-                <img src="./UMER_ME.png" alt="Profile Picture">
-
-
-                <!-- Updated Floating Icons -->
-                <div class="floating-icon icon1">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="floating-icon icon2">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="floating-icon icon3">
-                    <i class="fas fa-palette"></i>
-                </div>
-            </div>
-            </div>
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <div class="hero-text animate-from-left">
+        <div class="hire-badge">
+          <i class="fas fa-circle"></i> Available for Hire
         </div>
-    </section>
+        <h1 class="main-heading">
+          Hi, I'm <span class="highlight">Umer Zafar</span>
+          <span class="heading-shadow">Umer Zafar</span>
+        </h1>
+        <h2 class="sub-heading">
+          Freelance WordPress Developer
+          <span class="heading-reflection">Freelance WordPress Developer</span>
+        </h2>
+        <p class="hero-description">
+          Looking for a WordPress expert who can deliver results?
+        </p>
+        <p class="hero-description">
+          With over 10 years of experience, I specialize in creating responsive WordPress websites, custom
+          themes, and complex WooCommerce solutions. Whether you need custom development, plugin building, or
+          troubleshooting, I’ve got you covered. I pride myself on delivering user-friendly, SEO-optimized
+          sites that enhance your online presence and drive engagement.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="secondary-btn scroll-to-contact">
+            View My Services <i class="fas fa-paper-plane"></i>
+          </a>
+
+          <a href="#contact" class="secondary-btn scroll-to-contact">
+            Let's Talk <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons-container">
+          <a href="https://wa.me/03323289918" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
+            class="social-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon display-none" target="_blank" rel="noopener noreferrer"
+            style="display:none;">
+            <i class="custom-fiverr">fi</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="hero-video w-full lg:w-1/2 relative mt-10 lg:mt-0 flex justify-center">
+        <div class="relative w-full" style="padding-top: 56.25%;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/8W5TReLnDTQ?autoplay=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=8W5TReLnDTQ&disablekb=1"
+            title="Intro Video"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -148,7 +155,7 @@
                 <div class="about-text animate-from-left">
                     <h3 class="about-subtitle">Your Trusted Freelance WordPress Developer.</h3>
                     <p class="about-description">
-                        With over 13 years of professional experience, I am Umer Zafar, a seasoned software engineer who
+                        With over 10 years of professional experience, I am Umer Zafar, a seasoned software engineer who
                         graduated with a BS in Software Engineering from Punjab University, Lahore in October 2013. My
                         career began at a multinational software company, where I worked as a full-stack developer
                         across various technologies, honing my technical skills and industry insights.
@@ -181,7 +188,7 @@
                     <h2 class="section-heading">Professional Stats</h2>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number" data-target="13">0</span>
+                            <span class="stat-number" data-target="10">0</span>
                             <span class="stat-plus">+</span>
                             <span class="stat-text">Experience Years</span>
                         </div>
